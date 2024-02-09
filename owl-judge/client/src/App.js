@@ -9,9 +9,10 @@ function App() {
   return (
     <Router>
     <Routes>
-        {/* Root route */}       
+        {/* Root route */} 
+        <Route path="/" element={<SignIn />} />     
         <Route path="/signin" element={<SignIn />} />
-        <Route path="/Signup" element={<SignUp />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         
 
