@@ -28,7 +28,8 @@ const CreateEvent = () => {
       }/>
       <button onClick={
         () => {
-          //Insert push request to db
+          //Replace with post request
+          console.log({title}, {startDate}, {startTime}, {endDate}, {endTime})
         }
       }>Add Event</button>
     </div>
