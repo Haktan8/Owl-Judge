@@ -1,20 +1,37 @@
 import React, { useState } from 'react';
 import InputField from '../components/InputField';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../index';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function SignIn() {
   // State for storing input values
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
     // Here you can implement your logic for authentication
-    console.log('Email:', email);
-    console.log('Password:', password);
+    signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      //Signed in
+      const user = userCredential.user;
+      navigate('../AdminDashboard');
+      console.log("User signed in: " + user)
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode + " " + errorMessage);
+    });
     // Reset the form after submission
     setEmail('');
     setPassword('');
+    
   };
 
   return (

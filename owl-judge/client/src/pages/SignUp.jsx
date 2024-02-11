@@ -4,6 +4,9 @@ import InputField from "../components/InputField.jsx";
 import { signUp } from "../index.js";
 import { useNavigate } from 'react-router-dom';
 
+
+
+
 function SignUp() {
     const navigate = useNavigate();
     const [firstName, setFirstName] = useState("");
