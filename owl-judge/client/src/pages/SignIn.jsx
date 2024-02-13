@@ -23,7 +23,7 @@ function SignIn() {
     .then((userCredential) => {
       //Signed in
       const user = userCredential.user;
-      navigate('../AdminDashboard');
+      navigate('../Admin');
       console.log("User signed in: " + user.email)
     })
     .catch((error) => {
