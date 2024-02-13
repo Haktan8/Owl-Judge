@@ -36,7 +36,7 @@ function SignIn() {
     // Authentication logic goes here
     console.log('Email:', email);
     console.log('Password:', password);
-    additions
+  
     setEmail('');
     setPassword('');
     
