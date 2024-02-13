@@ -1,3 +1,27 @@
+.manually-add-project, .add-judge-csv, .set-judge-threshold {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.manually-add-project h2, .add-judge-csv h2, .set-judge-threshold h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.import-project, .add-judge-csv, .set-judge-threshold {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.import-project h2, .add-judge-csv h2, .set-judge-threshold h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
 .add-project-container {
     display: flex;
     flex-direction: column;
