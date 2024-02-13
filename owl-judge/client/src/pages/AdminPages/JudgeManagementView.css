@@ -1,0 +1,67 @@
+.judge-management {
+  padding: 50px;
+}
+
+.judge-management h1 {
+  margin-bottom: 20px;
+}
+
+.judge-management .judges-list {
+  margin-top: 20px;
+}
+
+.judge-item {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-judge-btn {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.judge-item p {
+  margin: 0;
+}
+
+.judge-item button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.judge-item button:hover {
+  opacity: 0.8;
+}
+
+.judge-management table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.judge-management th, .judge-management td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.judge-management th {
+  background-color: #f2f2f2;
+}
+
+.judge-management tr:nth-child(even) {background-color: #f9f9f9;}
+
+.judge-management tr:hover {background-color: #ddd;}
+
