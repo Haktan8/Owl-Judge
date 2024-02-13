@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './CreateEvent.css'; // Ensure you have this if you're styling your component
+import { createEvent } from '../Firebase/Database';
 
 const CreateEvent = () => {
   const [title, setTitle] = useState('');
@@ -31,6 +32,7 @@ const CreateEvent = () => {
       setInputError('Not all inputs have been filled');
       // Post logic here
     } else {
+      createEvent(title, startDate, startTime, endDate, endTime);
       setInputError('');
     }
   };

@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
 //import { HttpsError, beforeUserCreated } from "firebase-functions/v2/identity";
 
@@ -29,6 +30,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
+const db = getFirestore(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -66,7 +68,7 @@ export const signUp = async (email, password, firstName, lastName, dob) => {
   }
 })*/
 
-export {auth, app, firebaseConfig}
+export {auth, app, db}
 
 
 

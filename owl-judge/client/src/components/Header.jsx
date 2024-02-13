@@ -1,5 +1,7 @@
 import React from 'react';
 import './Header.css';
+import { auth } from '../index';
+
 
 const Header = () => {
   return (
@@ -7,11 +9,14 @@ const Header = () => {
       <div className="header-content">
         <div className="header-title">OWL JUDGE</div>
         <div className="header-signout">
-          <button onClick={() => {/* handle sign out logic here */}}>Sign Out</button>
+          <button onClick={() => { auth.signOut() }}>Sign Out</button>
         </div>
       </div>
     </header>
   );
 };
+
+
+
 
 export default Header;
