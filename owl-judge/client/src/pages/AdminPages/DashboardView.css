@@ -1,0 +1,31 @@
+.dashboard-view {
+    padding: 50px;
+  }
+  
+  .dashboard-statistics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .statistic {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .dashboard-links h2 {
+    margin-top: 20px;
+  }
+  
+  .dashboard-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .dashboard-links li {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  

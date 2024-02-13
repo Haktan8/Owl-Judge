@@ -1,0 +1,53 @@
+.add-judge-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .add-judge-manual, .add-judge-csv, .set-judge-threshold {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-judge-manual h2, .add-judge-csv h2, .set-judge-threshold h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .add-judge-container input[type="text"],
+  .add-judge-container input[type="file"],
+  .add-judge-container input[type="number"],
+  .add-judge-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-judge-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .add-judge-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-judge-container p {
+    color: red;
+    margin-top: 5px;
+  }
+  

@@ -1,0 +1,35 @@
+.scoring-view {
+  padding: 20px;
+}
+
+.scoring-view h1 {
+  margin-bottom: 20px;
+}
+
+.scoring-criteria-list {
+  margin-top: 20px;
+}
+
+.criteria-item {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.criteria-item p {
+  margin: 0;
+}
+
+.scoring-view button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.scoring-view button:hover {
+  background-color: #45a049;
+}

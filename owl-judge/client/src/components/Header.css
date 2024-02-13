@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbcbc;
+    color: white;
+    padding: 10px 20px;
+    position: fixed; /* Makes the header stay at the top */
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000; /* Ensures the header stays above other content */
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your design needs */
+  }
+  
+  .header-title {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .header-signout {
+    /* Aligns the sign-out button to the right */
+    margin-left: auto;
+  }
+  
+  .header-signout button {
+    background-color: #f44336; /* Red color for the sign-out button */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .header-signout button:hover {
+    background-color: #d32f2f; /* Darker shade on hover */
+  }
+  
