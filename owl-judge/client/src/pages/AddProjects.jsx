@@ -12,7 +12,7 @@ const AddProjects = () => {
 
   const addProject = () => {
     //Checks if any inputs are empty. If so = true
-    const emptyInput = [projectNumber, title, category, topic, sponsoringCompany, alertTime].every(value => value === '');
+    const emptyInput = [projectNumber, title, category, topic, sponsoringCompany, alertTime].some(value => value === '');
     if (emptyInput){
       setAddProjectError('One or more of your inputs are blank.')
     }

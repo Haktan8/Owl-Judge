@@ -11,7 +11,7 @@ const AddJudges = () => {
 
   const addJudge = () => {
     //Checks if any inputs are empty. If so = true
-    const emptyInput = [judgeName, companyName, preference].every(value => value === '');
+    const emptyInput = [judgeName, companyName, preference].some(value => value === '');
     if (emptyInput){
       setAddError('One or more of your inputs are blank.')
     }
