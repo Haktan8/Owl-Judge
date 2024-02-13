@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import InputField from "../components/InputField.jsx";
 import { signUp } from "../index.js";
 import { useNavigate } from 'react-router-dom';
+import './SignUp.css'
 
 
 
