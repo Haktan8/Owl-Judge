@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './AddScoring.css'; // Ensure you create and import CSS for styling
+import './AddScoring.css'; 
 
 const AddScoring = ({ onAddScoringCriteria }) => {
   const [name, setName] = useState('');

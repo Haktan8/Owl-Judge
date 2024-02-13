@@ -1,3 +1,4 @@
+import './AddProjects.css';
 const AddProjects = () => {
   return (  
     <div className="add-project-container">

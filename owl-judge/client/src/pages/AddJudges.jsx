@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './AddJudges.css';
 
 const AddJudges = () => {
   const [judgeName, setJudgeName] = useState('')

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #bdbcbc;
+    background-color: #272626;
     color: white;
     padding: 10px 20px;
     position: fixed; /* Makes the header stay at the top */

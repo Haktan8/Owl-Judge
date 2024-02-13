@@ -18,7 +18,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
 
         /* Admin routes */
-        <Route path="/admin" element={<AdminDashboard />}>
+          <Route path="/admin" element={<AdminDashboard />}>
           <Route path='create-event' element={<CreateEvent />} />
           <Route path='add-judges' element={<AddJudges />} />
           <Route path='add-projects' element={<AddProjects />} />

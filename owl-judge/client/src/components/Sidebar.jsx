@@ -1,4 +1,6 @@
 import React from 'react';
+import './Sidebar.css'; // Adjust the path as needed
+
 
 const Sidebar = ({ onMenuClick }) => {
   return (
