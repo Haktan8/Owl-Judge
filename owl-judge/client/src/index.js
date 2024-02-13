@@ -6,6 +6,10 @@ import reportWebVitals from './reportWebVitals';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
+
+//import { HttpsError, beforeUserCreated } from "firebase-functions/v2/identity";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -24,6 +28,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const auth = getAuth(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,10 +41,32 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-// Funcrion used for new user Sign Up [New User Request]
+// Function used for new user Sign Up [New User Request]
 export const signUp = async (email, password, firstName, lastName, dob) => {
+  
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      //Signed up
+      const user = userCredential.user;
+      console.log("User Created:" + user.displayName);
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
 
+      console.log(errorCode + " " + errorMessage);
+    })
 };
+
+/*const beforecreated = beforeUserCreated((event) => {
+  const user = event.data;
+
+  if(!user?.email?.includes("@students.kennesaw.edu")) {
+    throw new HttpsError('invalid-argument', "Unauthorized email");
+  }
+})*/
+
+export {auth, app, firebaseConfig}
 
 
 
