@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .col-md-6 {
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .border {
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form {
+    margin-top: 20px;
+  }
+  
+  .input-field {
+    margin-bottom: 15px;
+  }
+  
+  .password-requirements {
+    margin-top: 10px;
+  }
+  
+  .password-requirements ul {
+    padding-left: 20px;
+  }
+  
+  .password-requirements li {
+    list-style-type: none;
+    color: #999;
+  }
+  
+  .password-requirements li.valid {
+    color: #28a745;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  

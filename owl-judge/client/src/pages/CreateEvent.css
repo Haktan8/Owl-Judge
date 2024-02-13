@@ -1,0 +1,37 @@
+.create-event-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .create-event-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .create-event-container input,
+  .create-event-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .create-event-container button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .create-event-container button:hover {
+    background-color: #45a049;
+  }
+
+  .create-event-container .error {
+    color: red;
+  }
+  
