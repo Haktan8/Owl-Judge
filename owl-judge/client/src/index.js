@@ -48,7 +48,7 @@ export const signUp = async (email, password, firstName, lastName, dob) => {
     .then((userCredential) => {
       //Signed up
       const user = userCredential.user;
-      console.log("User Created:" + user.displayName);
+      console.log("User Created:" + user.email);
     })
     .catch((error) => {
       const errorCode = error.code;

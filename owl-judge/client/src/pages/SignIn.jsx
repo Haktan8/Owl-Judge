@@ -24,18 +24,18 @@ function SignIn() {
       //Signed in
       const user = userCredential.user;
       navigate('../AdminDashboard');
-      console.log("User signed in: " + user)
+      console.log("User signed in: " + user.email)
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       console.log(errorCode + " " + errorMessage);
     });
-    // Reset the form after submission
+    
     
     // Authentication logic goes here
-    console.log('Email:', email);
-    console.log('Password:', password);
+    //console.log('Email:', email);
+    //console.log('Password:', password);
   
     setEmail('');
     setPassword('');
