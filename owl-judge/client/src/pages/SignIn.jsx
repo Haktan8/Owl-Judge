@@ -1,58 +1,47 @@
 import React, { useState } from 'react';
 import InputField from '../components/InputField';
+import './SignIn.css'; // Make sure this path is correct and the CSS is updated as per previous instructions
 
 function SignIn() {
-  // State for storing input values
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Here you can implement your logic for authentication
+    // Authentication logic goes here
     console.log('Email:', email);
     console.log('Password:', password);
-    // Reset the form after submission
     setEmail('');
     setPassword('');
   };
 
   return (
-    <div className="sign in container">
-      <div className="sign in row">
-        <div className="sign-in-column">
-          <div className="sign-in-header">
+    <div className="signin-container">
+      <div className="signin-row">
+        <div className="signin-column">
+          <div className="signin-header">
             <h2>Sign In</h2>
-            {/*
-              <h2>{user ? user.email : 'No User'}</h2>
-            */}
           </div>
-          <div className="Sign in Email">
-            <form onSubmit={handleSubmit}>
-              <InputField
-                label="Email"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <InputField
-                label="Password"
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <div className="Sign In Text">
-                <button type="submit" className="Sign In Button">
-                  Sign In
-                </button>
-              </div>
-            </form>
-            <div className="Forgot Password Text">
-              <a href="/forgot-password">Forgot Password</a>
-            </div>
-            <div className="Create an Account Text">
-              <a href="/signup">Create An Account</a>
-            </div>
+          <form onSubmit={handleSubmit} className="signin-form">
+            <InputField
+              label="Email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <InputField
+              label="Password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button type="submit" className="signin-button">
+              Sign In
+            </button>
+          </form>
+          <div className="signin-footer">
+            <a href="/forgot-password" className="forgot-password-link">Forgot Password</a>
+            <a href="/signup" className="create-account-link">Create An Account</a>
           </div>
         </div>
       </div>
@@ -61,4 +50,3 @@ function SignIn() {
 }
 
 export default SignIn;
-
