@@ -1,6 +1,7 @@
 // ForgotPassword.jsx
 import React, { useState } from "react";
 import InputField from "../components/InputField";
+import './ForgotPassword.css';
 
 function ForgotPassword() {
     const [email, setEmail] = useState("");
@@ -13,10 +14,10 @@ function ForgotPassword() {
     };
 
     return (
-        <div className="container h-100">
-            <div className="row h-100 justify-content-center align-items-center">
-                <div className="col-md-6">
-                    <div className="text-center">
+        <div className="signin-container">
+      <div className="signin-row">
+        <div className="signin-column">
+          <div className="signin-header">
                     
                         <h2>Forgot Password</h2>
                     </div>

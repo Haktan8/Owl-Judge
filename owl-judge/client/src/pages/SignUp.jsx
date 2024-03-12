@@ -53,10 +53,10 @@ function SignUp() {
     };
 
     return (
-        <div className="container h-100">
-            <div className="row h-100 justify-content-center align-items-center">
-                <div className="col-md-6">
-                    <div className="text-center">
+        <div className="signin-container">
+      <div className="signin-row">
+        <div className="signin-column">
+          <div className="signin-header">
                     
 
                         <h2>New User Account</h2>
