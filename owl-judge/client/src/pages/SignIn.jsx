@@ -7,8 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-import './SignIn.css'; // Make sure this path is correct and the CSS is updated as per previous instructions
-
+import './SignIn.css'; 
 
 function SignIn() {
   const [email, setEmail] = useState('');
