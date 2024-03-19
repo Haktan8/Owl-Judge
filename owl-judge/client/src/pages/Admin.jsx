@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './AdminDashboard.css';
-import Sidebar from '../components/Sidebar';
+import './Admin.css';
+import Sidebar from '../components/AdminSidebar';
 import Header from '../components/Header';
 import DashboardView from './AdminPages/DashboardView';
 import EventManagementView from './AdminPages/EventManagementView';
@@ -11,6 +11,7 @@ import SettingsView from './AdminPages/SettingsView';
 
 const AdminDashboard = () => {
   const [view, setView] = useState('dashboard');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const handleMenuClick = (viewName) => {
     setView(viewName);
@@ -36,10 +37,14 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="admin-dashboard">
-      <Sidebar onMenuClick={handleMenuClick} />
+    <div className="judge-dashboard">
+      <Sidebar 
+        onMenuClick={handleMenuClick} 
+        isOpen={isSidebarOpen} 
+        toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} 
+      />
       <Header />
-      <div className="dashboard-content">
+      <div className="dashboard-content" style={{ marginLeft: isSidebarOpen ? '250px' : '50px' }}>
         {renderView()}
       </div>
     </div>

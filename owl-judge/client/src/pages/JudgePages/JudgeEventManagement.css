@@ -1,0 +1,93 @@
+/* Apply a base font family and size to the whole application for consistency */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background: #f7f7f7;
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+}
+
+.event-management {
+  padding: 32px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 2rem; /* Scaled up for better visibility */
+  font-weight: 400; /* Standard font weight for headers */
+  color: #333;
+  margin: 0;
+}
+
+/* Cards containing statistics */
+.statistic {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0 20px 20px 0; /* Consistent margin for all cards */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: inline-block; /* Allows cards to be side by side */
+  width: calc(25% - 20px); /* Four cards per row with margins considered */
+}
+
+/* Uniform button design across the application */
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #43a047;
+}
+
+/* Additional button styles for specific actions */
+.add-event-btn {
+  background-color: #5cb85c; /* A slightly different shade of green */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* If you have other actions like edit or delete, add styles here */
+.edit-btn {
+  background-color: #f0ad4e;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+}
+
+/* Responsive design breakpoints */
+@media (max-width: 768px) {
+  .statistic {
+    width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .page-header,
+  .statistic {
+    margin: 0; /* Remove margins on smaller screens for full-width cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .statistic {
+    width: 100%; /* One card per row on very small screens */
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem; /* Slightly smaller headers on small screens */
+  }
+}

@@ -1,0 +1,56 @@
+.sidebar.collapsed {
+  width: 50px; /* Adjust based on desired collapsed width */
+  overflow-x: hidden; /* Hide content outside the sidebar */
+  transition: width 0.3s ease; /* Smooth transition for collapsing and expanding */
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px; /* Adjust the width as per your design */
+    height: 100%;
+    background-color: #343a40; /* Dark shade for sidebar background */
+    color: #ffffff; /* Light color for text for contrast */
+    padding-top: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Allows scrolling for long lists of menu items */
+    transition: width 0.3s ease
+  }
+
+  .sidebar button{
+    margin-top: 50px;
+  }
+
+  .sidebar-content {
+    padding-top: 20px; /* Adjust this value to push the content lower */
+    border-radius: 15px;
+  }
+  
+  .sidebar h2 {
+    color: #fff;
+    margin-top: 0;
+  }
+  
+  .sidebar ul {
+    border-radius: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    border-radius: 15px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar ul li:hover {
+    border-radius: 15px;
+    padding: 5%;
+    transition: 0.2s;
+    background-color: #495057; /* Lighter shade for hover effect */
+  }
+  

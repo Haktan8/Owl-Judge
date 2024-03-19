@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgotPassword';
-import AdminDashboard from './pages/AdminDashboard';
+import AdminDashboard from './pages/Admin';
 import CreateEvent from './pages/CreateEvent';
 import AddJudges from './pages/AddJudges'
 import AddProjects from './pages/AddProjects';
+import JudgeDashboard from './pages/Judge';
 function App() {
   return (
     <Router>
@@ -23,7 +24,12 @@ function App() {
           <Route path='add-judges' element={<AddJudges />} />
           <Route path='add-projects' element={<AddProjects />} />
         </Route>
-        /* Add more routes if needed */
+        /* Judge routes */
+          <Route path="/judge" element={<JudgeDashboard />}>
+          <Route path='create-event' element={<CreateEvent />} />
+          <Route path='add-judges' element={<AddJudges />} />
+          <Route path='add-projects' element={<AddProjects />} />
+        </Route>
       </Routes>
     </Router>    
   );
