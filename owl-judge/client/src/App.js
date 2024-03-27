@@ -8,23 +8,25 @@ import CreateEvent from './pages/CreateEvent';
 import AddJudges from './pages/AddJudges'
 import AddProjects from './pages/AddProjects';
 import JudgeDashboard from './pages/Judge';
+import LandingPage from './pages/LandingPage';
 function App() {
   return (
     <Router>
       <Routes>
         {/* Root route */} 
-        <Route path="/" element={<SignIn />} />     
+        <Route path="/" element={<SignIn />} />
+        <Route path="/landingpage" element={<LandingPage />} />      
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
 
-        /* Admin routes */
+        {/* Admin routes */}
           <Route path="/admin" element={<AdminDashboard />}>
           <Route path='create-event' element={<CreateEvent />} />
           <Route path='add-judges' element={<AddJudges />} />
           <Route path='add-projects' element={<AddProjects />} />
         </Route>
-        /* Judge routes */
+       {/* Judge routes */}
           <Route path="/judge" element={<JudgeDashboard />}>
           <Route path='create-event' element={<CreateEvent />} />
           <Route path='add-judges' element={<AddJudges />} />

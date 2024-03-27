@@ -1,0 +1,37 @@
+.landing-container {
+    text-align: center;
+    background-color: white; 
+  }
+  
+  .image-container {
+    margin: 20px;
+  }
+  
+  .center-image {
+    width: 440px;
+    height: auto;
+  }
+  
+  .button-container {
+    display: inline-flex; 
+    align-items: center; 
+    margin: 20px 0;
+  }
+  
+  .button-admin, .button-judge {
+    padding: 5px 20px;
+    margin: 0 10px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .or-text {
+    margin: 0 10px; 
+    color:green;
+  }
+  
+  
+
+  
+  
+  
